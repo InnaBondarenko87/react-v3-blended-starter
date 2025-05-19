@@ -1,11 +1,7 @@
-import Grid from "../Grid/Grid";
-import GridItem from "../GridItem/GridItem";
-import PhotosGalleryItem from "../PhotosGalleryItem/PhotosGalleryItem";
+// import Grid from "../Grid/Grid";
+// import GridItem from "../GridItem/GridItem";
+// import PhotosGalleryItem from "../PhotosGalleryItem/PhotosGalleryItem";
 import type { Photo } from "../../types/photo";
-
-// export default function PhotosGallery() {
-//   return <Grid>{/* PhotosGalleryItems */}</Grid>;
-// }
 
 interface PhotosGalleryProps {
   photos: Photo[];
