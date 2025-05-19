@@ -5,6 +5,7 @@ import type { Photo } from "../../types/photo";
 import { getPhotos } from "../../services/photos";
 import Form from "../Form/Form";
 import PhotosGallery from "../PhotosGallery/PhotosGallery";
+import Loader from "../Loader/Loader";
 
 export default function App() {
   const [photos, setPhotos] = useState<Photo[]>([]);
@@ -32,7 +33,8 @@ export default function App() {
     <div>
       <Form onSubmit={handleSearch} />
       {isError && <p>Oops, something went wrong...</p>}
-      {isLoading && <p>Loading...</p>}
+      {isLoading && <Loader />}
+      {/* <isLoading && <p>Loading...</p>/> */}
       <PhotosGallery photos={photos} onPhotoClick={handlePhotoClick} />
     </div>
   );
